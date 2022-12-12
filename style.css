@@ -1,28 +1,219 @@
-
-span.bigcheck-target {
-    font-family: FontAwesome; /* use an icon font for the checkbox */    
-}
-input[type='checkbox'].bigcheck {     
-    position: relative;
-    left: -999em; /* hide the real checkbox */
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
 }
 
-input[type='checkbox'].bigcheck + span.bigcheck-target:after {
-    content: "\f096"; /* In fontawesome, is an open square (fa-square-o) */
-}
-input[type='checkbox'].bigcheck:checked + span.bigcheck-target:after {
-    content: "\f046"; /* fontawesome checked box (fa-check-square-o) */
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
 }
 
-/* ==== optional - colors and padding to make it look nice === */
-body { 
-    background-color: #2C3E50; 
-    color: #D35400; 
-    font-family: sans-serif;
-    font-weight: 500;
-    font-size: 4em; /* set this to whatever size you want */
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
 }
-span.bigcheck { 
-    display: block;
-    padding: 0.5em;;
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+	font-family: 'Anton', sans-serif;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #202020;
+	font-weight: bold;
+	font-size: 2.5em;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #b97e10;
+}
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+.produtos li:active {
+	border-color: #088C19;	
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+/* Página de contato */
+.contato {
+	width: 940px;
+	margin: 40px auto;
+}
+
+.contato label, .input-group legend {
+	display: block;
+	margin: 0 0 5px;
+	font-size: 20px;
+}
+
+.campo-padrao, textarea {
+	display: block;
+	margin: 0 0 30px;
+	padding: 10px 20px;
+	width: 50%;
+	border: 1px solid #aaa;
+}
+
+.input-group {
+	margin: 0 0 20px;
+}
+
+.newsletter {
+	margin: 0 0 20px;
+}
+
+.botao {
+	margin: 20px 0 0;
+	width: 30%;
+	padding: 10px 20px;
+	font-size: 24px;
+	display: inline-block;
+	background: orange;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	transition: 1s;
+}
+
+.botao:hover {
+	cursor: pointer;
+	transform: scale(1.2);	
+}
+
+.funcionamento {
+	width: 940px;
+	margin: 0 auto 40px;
+}
+
+table {
+	margin: 10px 0 0;
+}
+
+th  {
+	background: #777777;
+	color: #FFFFFF;
+}
+
+
+td, th {
+	border: 1px solid #000000;
+	padding: 5px 20px;
+}
+main {
+	width: 940px;
+	margin: auto;
+}
+form {
+	margin: 40px 0px;
+}
+form label, form legend {
+	font-size: 20px;
+	display: block;
+	margin: 0px 0px 10px;
+}
+.input-comum {
+	display: block;
+	margin: 0px 0px 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+.checkbox {
+	margin:20px 0px;
+}
+form table {
+	margin:20px 0px;
+	font-family: 'Times New Roman', Times, serif;
+}
+thead {
+	font-weight: bold;
+}
+tbody > tr:nth-child(2n-1) {
+	background-color: #f8be51;
+}
+#comentarios {
+	margin-top: 20px;
+
+}
+#data {
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+	display: block;
+	margin: 10px 0px 10px;
+	width: 17%;
+}
+.enviar {
+	width: 40%;
+	padding: 15px 0px;
+	background-color: #d89211;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	text-shadow: 1px 1px 2px #0000009d;
+	font-size: 18px;
+	box-shadow: 2px 2px 5px #0000009d;
+	border: none;
+	border-radius: 7px;
+	cursor: pointer;
+	margin-left: 8%;
+}
+.enviar:hover {
+	background-color: #b97e10;
+	transition: .3s all;
+	transform: scale(1.1);
 }
