@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Produtos - Barbearia Alura</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<style> @import url('https://fonts.googleapis.com/css2?family=Anton&family=Press+Start+2P&display=swap'); </style>
+	</head>
+	<body>
+        <header>
+			<div class="caixa">
+				<h1><img src="logo.png" alt="Logo barbearia Alura"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+    <main>
+		<form action="">
+			<label for="txtname">Nome completo</label>
+			<input type="text" name="txtname" id="txtname" class="input-comum" required maxlength="50" autocomplete="name">
+			<label for="txtemail">Email</label>
+			<input type="email" name="txtname" id="txtname" class="input-comum" placeholder="seumelhoremail@email.com" required maxlength="30" autocomplete="email">
+			<label for="txttel">Telefone</label>
+			<input type="tel" name="txttel" id="txttel" class="input-comum" placeholder="(00)90000-0000" required maxlength="14">
+			
+			<fieldset id="contatos">
+				<legend>Como prefere nosso contato?</legend>
+				<label for="radio-email"><input type="radio" name="contato" id="radio-email" value="email">Email</label>
+				
+				<label for="radio-telefone"><input type="radio" name="contato" id="radio-telefone" value="telefone">Telefone</label>
+				
+				<label for="radio-wpp"><input type="radio" name="contato" id="radio-wpp" value="wpp" checked>Whatsapp</label>	
+			</fieldset>
+			<label class="checkbox"> <input type="checkbox" checked>Gostaria de receber informações promocionais?</label> 
+			<hr>
+			<table>
+				<thead>
+					<th colspan="2">Horários de funcionamento</th>
+					<tr>
+						<td>Dia</td> <td>Horário</td>
+					</tr>
+				</thead>
+				<tbody id="tabela-hor">
+					<tr>
+						<td>Terça</td> <td>8:00 as 16:00</td>
+					</tr>
+					<tr><td>Quarta</td> <td>8:00 as 16:00</td></tr>
+					<tr>
+						<td>Quinta</td> <td>8:00 as 16:00</td>
+					</tr>
+					<tr>
+						<td>Sexta</td> <td>8:00 as 20:00</td>
+					</tr>
+					<tr>
+						<td>Sábado</td> <td>8:00 as 20:00</td>
+					</tr>
+					<tr>
+						<td>Domingo</td> <td>8:00 as 16:00</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<fieldset id="agendamento">
+				<legend>Agende seu horário</legend>
+				<input type="date" name="data" id="data" min="2022-12-10">
+				<select name="selhora" id="selhora">
+					<option value="blank">  </option>
+					<option value="Manhã">Manhã (08:00 as 12:00)</option>
+					<option value="Tarde">Tarde  (13:00 as 17:00)</option>
+					<option value="Noite">Noite   (17:00 as 20:00)</option>
+				</select>
+			</fieldset>
+
+			<label for="txtarea" id="comentarios">Comentários</label>
+			<textarea name="txtarea" id="txtarea" cols="32" rows="10"  class="input-comum" maxlength="80"></textarea>
+
+			<input type="submit" value="Enviar" class="enviar">
+		</form>
+    </main>
+    <footer>
+        <img src="logo-branco.png" alt="Logo barbearia Alura">
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+    </footer>
+	<script src="main.js"></script>
+</body>
+</html>
