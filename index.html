@@ -2,37 +2,81 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width= device-width">
 		<title>Barbearia Alura</title>
-		<link rel="stylesheet" href="style-home.css">
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" href="logo.icone.ico" type="image/x-icon">
+		<style> @import url('https://fonts.googleapis.com/css2?family=Anton&family=Press+Start+2P&display=swap'); </style>
 	</head>
 
 	<body>
-		<header>
-			<h1 class="titulo-principal">Barbearia Alura</h1>
+		<header id="headhome">
+			<header>
+				<div class="caixa">
+					<h1><img src="logo-branco.png" alt="Logo barbearia Alura"></h1>
+	
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="produtos.html">Produtos</a></li>
+							<li><a href="contato.html">Contato</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
 		</header>
-		<img id="banner" src="banner.jpg">
-		<div class="principal">
-			<a href="contato.html">Link aqui</a>
-			<h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
-	 
-			<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+		
+		<main class="main-home">
+			<section class="principal">
+				<h2 class="titulo-principal-home">Sobre a Barbearia Alura</h2>
+				<img src="razor.jpg" class="navalha" alt="Utensílios convencionais de um barbeiro">
+				<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+				<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+				<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+			</section>
+			
+			<div class="video">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
 
-			<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
-
-			<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
-		</div>
-
-		<div class="beneficios">
-			<h3 class="titulo-centralizado">Benefícios</h3>
-
-			<ul>
-				<li class="itens">Atendimento aos Clientes</li>
-				<li class="itens">Espaço diferenciado</li>
-				<li class="itens">Localização</li>
-				<li class="itens">Profissionais Qualificados</li>
-			</ul>
-
-			<img src="beneficios.jpg" class="imagembeneficios">
-		</div>
+			<section class="mapa">
+				<h3 class="titulo-principal-home">Nosso estabelecimento</h3>
+				<p>Nosso esabelecimento está localizado no coração do Recife.</p>
+				<div class="iframe-mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.4203193660724!2d-34.89341548578676!3d-8.058536682743433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18c2331be44b%3A0x887253f89e13ebb7!2sR.%20das%20Ninfas%20-%20Soledade%2C%20Recife%20-%20PE%2C%2050030-230!5e0!3m2!1spt-PT!2sbr!4v1671586150532!5m2!1spt-PT!2sbr" width="100%" height="300" style="border: 0; ;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+			</section>
+			<section class="section-planos">
+				<h3 class="titulo-principal-home">Adiquira nosso plano anual</h3>
+				<article class="article-planos">
+					<div class="plano" id="plano-beta">
+						<h4>Plano Beta</h4>
+						<img src="beta-logo.png" alt="">
+						<p class="preco">49,99R$</p>
+						<p class="p-disclaimer">Mensal</p>
+						<p>Torne-se um beta e tenha direito a:</p>
+						<ul>
+							<li>1 Pacote completo (cabelo e barba) mensal</li>
+							<li>1 Corte de cabelo mensal</li>
+						</ul>
+					</div>
+					<div class="plano" id="plano-alfa">
+						<h4>Plano Alfa</h4>
+						<img src="alfa-logo.png" alt="">
+						<p class="preco">99,99R$</p>
+						<p class="p-disclaimer">Mensal</p>
+						<p>Libere seu alfa e tenha direito a:</p>
+						<ul>
+							<li>2 Pacote completo (cabelo e barba) mensal</li>
+							<li>2 Corte de cabelo mensal</li>
+							<li>Atendimento prioritário</li>
+						</ul>
+					</div>
+				</article>
+			</section>
+		</main>
+		<footer>
+			<img src="logo-branco.png" alt="Logo barbearia Alura">
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+		</footer>
 	</body>
 </html>

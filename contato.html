@@ -6,12 +6,13 @@
 
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" href="logo.icone.ico" type="image/x-icon">
 		<style> @import url('https://fonts.googleapis.com/css2?family=Anton&family=Press+Start+2P&display=swap'); </style>
 	</head>
 	<body>
         <header>
 			<div class="caixa">
-				<h1><img src="logo.png" alt="Logo barbearia Alura"></h1>
+				<h1><img src="logo-branco.png" alt="Logo barbearia Alura"></h1>
 
 				<nav>
 					<ul>
@@ -22,7 +23,7 @@
 				</nav>
 			</div>
 		</header>
-    <main>
+    <main class="main-contato">
 		<form action="">
 			<label for="txtname">Nome completo</label>
 			<input type="text" name="txtname" id="txtname" class="input-comum" required maxlength="50" autocomplete="name">
@@ -30,7 +31,8 @@
 			<input type="email" name="txtname" id="txtname" class="input-comum" placeholder="seumelhoremail@email.com" required maxlength="30" autocomplete="email">
 			<label for="txttel">Telefone</label>
 			<input type="tel" name="txttel" id="txttel" class="input-comum" placeholder="(00)90000-0000" required maxlength="14">
-			
+			<!--RegEx com atributo pattern="^\(d{2}\)\d{4,5}-/d{4}$"-->
+			<!-- ctrl ; cria uma tag de comentário em QUALQUER linguagem -->
 			<fieldset id="contatos">
 				<legend>Como prefere nosso contato?</legend>
 				<label for="radio-email"><input type="radio" name="contato" id="radio-email" value="email">Email</label>

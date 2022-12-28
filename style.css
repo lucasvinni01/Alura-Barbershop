@@ -1,11 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 header {
-	background: #BBBBBB;
-	padding: 20px 0;
+	background-image: url(banner-ph.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.240);
+	margin-bottom: 5px;
+}
+
+.titulo-principal-home {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+}
+
+.imagembeneficios {
+	width: 60%;
+}
+
+.principal {
+	padding: 3em 0;
+	line-height: 1.3em;
+	/* background-color: #FEFEFE; */
+	width: 940px;
+	margin: auto;
+}
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+.principal strong {
+	font-weight: bolder;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.navalha {
+	width: 175px;
+	margin: 0 20px 20px 0;
+	border: 1px solid rgb(0, 0, 0);
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.300);
+	float: left;
+}
+
+.mapa {
+	padding: 3em 0;
+	/* background: linear-gradient(#fefefe, #707070); */
+}
+
+.iframe-mapa {
+	width: 940px;
+	margin: 0 auto;
+	border: 2px solid #FEFEFE;
+	box-shadow: 0px 3px 5px #0000004d;
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.video {
+	width: 560px;
+	margin: 1em auto;
+}
+
+.section-planos h3 {
+	padding: 1em 0;
+}
+
+.article-planos {
+	display: flex;
+}
+
+.plano img {
+	width: 50%;
+	margin: auto;
+}
+
+.plano {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 2px 1px 5px #0000004d;
+	width: 300px;
+	height: 420px;
+	margin: 0px auto 20px;
+	padding: 20px;
+	opacity: 0.7;
+}
+
+#plano-beta {
+	background-color: #497396;
+	border: 1px solid #2a567a;
+	border-radius: 5px;
+}
+
+#plano-alfa {
+	background-color: #96765b;
+	border: 1px solid #ad5913;
+	border-radius: 5px;
+}
+
+#plano-beta:hover {
+	border: 2px solid #8fc8f7;
+	box-shadow: 0px 0px 20px #4183b9;
+	opacity: 1;
+	transition: 0.5s;
+}
+
+#plano-alfa:hover {
+	border: 2px solid #f7b27b;
+	box-shadow: 0px 0px 20px #ad5913;
+	opacity: 1;
+	transition: 0.2s;
+}
+
+.plano h4, p, ul {
+	text-align: center;
+}
+
+.plano ul, p:not(.p-disclaimer) {
+	line-height: 1.5em;
+}
+
+.plano p {
+	font-weight: 600;
+	margin: 0px 0px 10px 0px;
+}
+
+.plano h4 {
+	font-size: 1.75em;
+	font-weight: bolder;
+}
+
+.p-disclaimer {
+	color: rgb(54, 54, 54);
+	font-size: 0.7em;
+	margin: 0px 0px 10px 0px;
+}
+
+.preco {
+	font-family: 'Anton', sans-serif;
+	font-size: 3em;
+	padding: 10px 10px 0px 10px;
+	color: #FEFEFE;
+	text-shadow: 2px 0px 3px rgba(0, 0, 0, 0.438);
 }
 
 .caixa {
 	position: relative;
 	width: 940px;
+	height: 280px;
 	margin: 0 auto;
 }
 
@@ -23,10 +171,11 @@ nav li {
 
 nav a {
 	text-transform: uppercase;
-	color: #202020;
+	color: #FEFEFE;
 	font-weight: bold;
 	font-size: 2.5em;
 	text-decoration: none;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.596);
 }
 
 nav a:hover {
@@ -82,6 +231,7 @@ footer {
 	text-align: center;
 	background: url("bg.jpg");
 	padding: 40px 0;
+	box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.240);
 }
 
 .copyright {
@@ -155,12 +305,17 @@ td, th {
 	border: 1px solid #000000;
 	padding: 5px 20px;
 }
+
 main {
-	width: 940px;
-	margin: auto;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.main-home {
+	background: linear-gradient(#FEFEFE, #707070);
 }
 form {
-	margin: 40px 0px;
+	margin: 40px 0px 0px 0px;
+	padding: 20px;
 }
 form label, form legend {
 	font-size: 20px;
@@ -216,4 +371,22 @@ tbody > tr:nth-child(2n-1) {
 	background-color: #b97e10;
 	transition: .3s all;
 	transform: scale(1.1);
+}
+/* mobile devices */
+@media screen and (max-width: 450px) {
+	main, .caixa, .principal, .mapa-conteudo, .video {
+		width: auto;
+	}
+	
+	.caixa ul {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
 }
